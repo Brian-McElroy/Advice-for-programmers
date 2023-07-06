@@ -1,7 +1,7 @@
-# Advice-for-programmers
+# Advice-for-programmers.
 A few principles I've found to be important and useful in my career making games and apps and using Unity.  
 
-## Communication skill is more important than coding skill
+## Communication skill is more important than coding skill.
 I would much rather have a terrible coder / great communicator on my team rather than the inverse.  
 Sitting down to write some code without talking to someone first is a bad sign and should be avoided.  
 Overcommunication is always better than undercommunication. Overcommunication could be annoying or seen as patronising but the alternative is far worse. eg. a top dev spending a week writing excellent code for the *wrong feature*  
@@ -10,7 +10,7 @@ Exactly what you are doing.
 Why you are doing it.  
 How you plan to do it.  
 
-## Take your time
+## Take your time.
 It's much better to underpromise and overdeliver than the inverse.  
 Schedule plenty of time for your work. eg. make a resonable estimate, then double it.  
 Everything almost always takes longer than you think it will.  
@@ -29,9 +29,9 @@ You should ideally be starting a new file, (or a new class)
 If you must work in an existing file then you should at least be starting a new function.  
 Very rarely should you be adding more code to an existing function. Perhaps just one line calling your new function would be ok, anything else is dubious.  
 
-## Actual Coding advice
+## Actual Coding advice.
 
-### The fundamentals
+### The fundamentals.
 If you can religiously follow these fundamentals then u are 50% of the way to having good code already.  
 Also if you have a nice maintainable codebase, then working on it each day will be a pleasure and something you look forward to.  
 
@@ -40,7 +40,7 @@ Keep functions tiny (eg. 10 lines).
 Many small things are almost always better then one big thing (classes, scenes, prefabs, whatever.)  
 Keep the lifetime of everything to minimum (objects, scenes, prefabs, whatever.) It's always better to spawn and destroy stuff than keep it around.  
 
-### Minimise coupling  
+### Minimise coupling.  
 Everyone always says this but I think they dont define coupling too well. Obviously different parts of your code will need to talk to each other at some point and that's ok.  
 Classes should have well defined public endpoint functions and everything else should be private.  
 If you can delete everything inside a class and replace it with something entirely different, without any of your other code breaking, then thats fine and you have avoided bad coupling.  
@@ -50,22 +50,22 @@ If class A is calling class B and class B is also calling class A.
 If class A is micromanaging class B, like setting a bool on it.  
 If class A is calling many different functions on class B.  
 
-### Fancy features
+### Fancy features.
 Avoid fancy features of the langauge if you can.  
 If you can do everything with the basisc like, variables, functions, loops, if/else (the things you learned in week 1 of college) thats great! Having to use fancier features of a language (eg. ternary operators, linq, whatever) is not a good sign.  
 
 The absolute best class is all static with no fields and just simple functions that take some input and return some output. As much of your code as possible should be like that.
 
-### Design patterns
+### Design patterns.
 The best design pattern is none.  
 It's good to know and have experience with various design patterns, but you should avoid using one in your own programs until the last possible moment, only when it's an emergency.  The thing about design patterns is that once you've committed to a certain pattern. you cant go back, all future work now needs to fit into the pattern, and you dont know what features or changes you might want in the future. Maybe they will be an awkward fit for the pattern? So by using a design pattern in a way you have made your code less maintainable.
 a design pattern can help you implement a very difficult feature, overcome a big challenge but ideally you wont ever need to use one.
 
-### Why spaghetti is bad
+### Why spaghetti is bad.
 The reason we call a certain type of bad code "spaghetti code" is not because it is disorganised and has no pattern like spaghetti, it's because it's all tangled and stuck together like spaghetti. You cant pull on a single strand of spaghetti without a huge clump of it following.  
 Obviousuly it's nice to have code organized and neat, but disorganized code is not the end of the world, what *should* certainly be avoided is "spaghetti code" which is code that is highly highly coupled with many instances of bad coupling, where you cant change one class without having to change another, and so on.  
 
-## Optimise for *you*
+## Optimise for *you*.
 The first code you write for any feature should be the utter simplest thing you can think of. The absolute easiest thing you personally as the dev could do that might give the client what they want. Ideally short and also *simple* and basic.  
 If this code works and it's fit for purpose then, happy days! you are done. Move on to next task. Only if your program is now failing some predetermined benchmark of performance / quality / security / whatever, should you consider optimizing your code.  
 That process might look like this.
