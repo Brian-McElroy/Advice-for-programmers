@@ -44,7 +44,7 @@ Everyone always says this but I think they dont define coupling too well. Obviou
 Classes should have well defined public endpoint functions and everything else should be private.  
 If you can delete everything inside a class and replace it with something entirely different, without any of your other code breaking, then thats fine and you have avoided bad coupling.  
 
-Some things that are probably bad coupling.  
+Some things that are probably signs of bad coupling.  
 If class A is calling class B and class B is also calling class A.  
 If class A is micromanaging class B, like setting a bool on it.  
 If class A is calling many different functions on class B.  
