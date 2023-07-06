@@ -33,7 +33,6 @@ Very rarely should you be adding more code to an existing function. Perhaps just
 
 ### The fundamentals.
 If you can religiously follow these fundamentals then u are 50% of the way to having good code already.  
-Also if you have a nice maintainable codebase, then working on it each day will be a pleasure and something you look forward to.  
 
 Keep classes tiny, (eg. 100 lines max) each class *really* should only do *one thing*.  
 Keep functions tiny (eg. 10 lines).  
