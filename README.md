@@ -58,7 +58,7 @@ Other programmers (including future you) mightnt know those fancy features very 
 The absolute best class is all static with no fields and just simple functions that take some input and return some output. As much of your code as possible should be like that.
 
 ### Testability
-Code that is easy to write unit tests for is probably good. It being difficult to write unit tests for some code is a red flag.
+Code that is easy to write unit tests for is probably good. It is a red flag if code is difficult to write unit tests for.
 
 ### Elegance
 So coders usually say code is "elegant" meaning it is very terse and/or clever and accomplishes a lot in few lines of code. This is not very good imo. I would much rather have 4 lines of very simple basic code that a child could understand, rather than a clever elegant one-liner. Just like with fancy features, future programmers (including you) may not understand that clever code and so it is less maintainable then the simple basic code.
@@ -83,10 +83,10 @@ That process might look like this.
 5. optimise lowest hanging fruit, then goto 2
 
 ## *Do* worry about maintainability.
-Pretty much the only thing I worry about in a project is maintainability. Performance / security / whatever problems very rarely arise in my experience, and if they do they can be addressed and fixed.  
-Lack of maintainability however is a looming problem in *every project*.  
+Pretty much the only thing I worry about in a project is maintainability. Performance / security / whatever problems very rarely arise in my experience, and if they do they can be troubleshooted and fixed.  
+Lack of maintainability however, is a looming existential problem in *every project*.  
 By maintainability I mean: How easy is it to make changes without breaking stuff and creating bugs.  
-To me it feels like every sofware project has a halflife and it's only a matter of time until it decays into unmaintainable goop, where 1 hour of bugfixing creates 2 more hours worth of bugs and progress is almost impossible. A project in that state is really horrible to work on and really saps your motivation.  
+To me, it feels like every sofware project has a half-life and it's only a matter of time until it decays into unmaintainable goop, where 1 hour of bugfixing creates 2 more hours worth of bugs, and progress is almost impossible. A project in that state is really horrible to work on and really saps your motivation.  
 A lot of the tips above are geared towards helping you keep your project more maintainable for as long as possible. Ideally your project can avoid becoming goop for its entire lifetime and be a pleasure to work on every day.  
 Another benefit of a maintainable project is that progress is linear and more predictable, whereas in an unmaintainable one, progress is really fast at the beginning and then slows down geometrically over time. It's worth moving slowly at the beginning of a project to ensure you are setting things up in a maintainable way. 
 
