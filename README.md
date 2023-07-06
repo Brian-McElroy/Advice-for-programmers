@@ -32,7 +32,7 @@ If you must work in an existing file then you should at least be starting a new 
 Very rarely should you be adding more code to an existing function. Perhaps just one line calling your new function would be ok, anything else is dubious.  
 
 ### The fundamentals.
-If you can religiously follow these fundamentals then u are 50% of the way to having good code already.  
+If you can religiously follow these fundamentals then u are half way to having good code already.  
 
 Keep classes tiny, (eg. 100 lines max) each class *really* should only do *one thing*.  
 Keep functions tiny (eg. 10 lines).  
