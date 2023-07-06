@@ -4,7 +4,7 @@ A few principles I've found to be important and useful in my career making games
 ## Communication skill is more important than coding skill.
 I would much rather have a terrible coder / great communicator on my team rather than the inverse.  
 Sitting down to write some code without talking to someone first is a bad sign and should be avoided.  
-Overcommunication is always better than undercommunication. Overcommunication could be annoying or seen as patronising but the alternative is far worse. eg. a top dev spending a week writing excellent code for the *wrong feature*  
+Overcommunication is always better than undercommunication. Overcommunication could be annoying or seen as patronising but the alternative is far worse. eg. a top dev spending a week writing excellent code for the *wrong feature*!  
 Ask questions. Keep asking questions until it is 100% clear in your own mind...  
 Exactly what you are doing.  
 Why you are doing it.  
