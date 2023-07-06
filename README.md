@@ -57,6 +57,9 @@ Other programmers (including future you) mightnt know those fancy features very 
 ### Static functions ftw
 The absolute best class is all static with no fields and just simple functions that take some input and return some output. As much of your code as possible should be like that.
 
+### Testability
+Code that is easy to write unit tests for is probably good. It being difficult to write unit tests for some code is a red flag.
+
 ### Elegance
 So coders usually say code is "elegant" meaning it is very terse and/or clever and accomplishes a lot in few lines of code. This is not very good imo. I would much rather have 4 lines of very simple basic code that a child could understand, rather than a clever elegant one-liner. Just like with fancy features, future programmers (including you) may not understand that clever code and so it is less maintainable then the simple basic code.
 
