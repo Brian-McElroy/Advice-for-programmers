@@ -22,7 +22,7 @@ Every feature you add and every change you make almost certainly introduces bugs
 The more features a program has the slower and more difficult it is to work on (to fix bugs and make necessary changes later)  
 Also more features can muddy the design and the apps purpose for users.  
 You should question whoever is suggesting making more software and more code and have them prove their point with data, prove that it's worthwhile.  
-Ideally you would be removing features, deleting software and code. Question the existing features existence and always be asking should we delete this?  
+Ideally you would be removing features, deleting software and code. Question the existing features and always be asking should we delete this?  
 
 ## Actual Coding advice.
 
