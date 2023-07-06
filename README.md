@@ -37,7 +37,7 @@ If you can religiously follow these fundamentals then u are half way to having g
 Keep classes tiny, (eg. 100 lines max) each class *really* should only do *one thing*.  
 Keep functions tiny (eg. 10 lines).  
 Many small things are almost always better then one big thing (classes, scenes, prefabs, whatever.)  
-Keep the lifetime of everything to minimum (objects, scenes, prefabs, whatever.) It's always better to spawn and destroy stuff than keep it around.  
+Keep the lifetime of everything to a minimum (objects, scenes, prefabs, whatever.) It's always better to spawn and destroy stuff than keep it around.  
 
 ### Minimise coupling.  
 Everyone always says this but I think they dont define coupling too well. Obviously different parts of your code will need to talk to each other at some point and that's ok.  
