@@ -1,7 +1,7 @@
 # Advice-for-programmers
 A few principles I've found to be important and useful in my career making games and apps and using Unity.
 
-* Communication skill is more important than coding skill
+## Communication skill is more important than coding skill
 I would much rather have a terrible coder / great communicator on my team rather than the inverse.
 Sitting down to write some code without talking to someone first is a bad sign and should be avoided.
 Overcommunication is always better than undercommunication. Overcommunication could be annoying or seen as patronising but the alternative is far worse. eg. a top dev spending a week writing excellent code for the *wrong feature*
@@ -10,13 +10,13 @@ Exactly what you are doing.
 Why you are doing it.
 How you plan to do it.
 
-* Take your time
+## Take your time
 It's much better to underpromise and overdeliver than the inverse. 
 Schedule plenty of time for your work. eg. make a resonable estimate, then double it.
 Everything almost always takes longer than you think it will.
 Being hasty and writing unmaintainable code will lose you time overall, and more importantly it will make the project unpleasant to work on for the future.
 
-* More code = more problems.
+## More code = more problems.
 As an engineer you might think your job is to write code. But a very important task you have is to always fight against writing more software and more code.
 Every feature you add and every change you make almost certainly introduces bugs and regressions.
 The more features a program has the slower and more difficult it is to work on (to fix bugs and make necessary changes later)
