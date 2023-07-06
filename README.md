@@ -53,13 +53,28 @@ If you can do everything with the basisc like, variables, functions, loops, if/e
 
 The absolute best class is all static with no fields and just simple functions that take some input and return some output. As much of your code as possible should be like that.
 
+The best design pattern is none.
+It's good to know and have experience with various design patterns, but you should avoid using one in your own programs until the last possible moment, only when it's an emergency. The thing about design patterns is that once you've committed to a certain pattern. you cant go back, all future work now needs to fit into the pattern, and you dont know what features or changes you might want in the future. Maybe they will be an awkward fit for the pattern? So by using a design pattern in a way you have made your code less maintainable.
+a design pattern can help you implement a very difficult feature, overcome a big challenge but ideally you wont ever need to use one.
+
+The reason we call a certain type of bad code "spaghetti code" is not because it is disorganised and has no pattern like spaghetti, it's because it's all tangled and stuck together like spaghetti. You cant pull on a single strand of spaghetti without a huge clump of it following.
+Obviousuly it's nice to have code organized and neat, but disorganized code is not the end of the world, what *should* certainly be avoided is "spaghetti code" which is code that is highly highly coupled with many instances of bad coupling, where you cant change one class without having to change another, and so on.
+
 * Optimise for *you*
 The first code you write for any feature should be the utter simplest thing you can think of. The absolute easiest thing you personally as the dev could do that might give the client what they want. Ideally short and also *simple* and basic.
 If this code works and it's fit for purpose then, happy days! you are done. Move on to next task. Only if your program is now failing some predetermined benchmark of performance / quality / security / whatever, should you consider optimizing your code.
+That process might look like this.
+1. Write simplest code.
+2. Run benchmarks.
+3. If benchmark passes, you're done! If benchmark fails and program is not fit for purpose, goto 4
+4. Run profiler, find the lowest hanging fruit to optimize
+5. optimise lowest hanging fruit, then goto 2
 
+* *Do* worry about maintainability.
+Pretty much the only thing I worry about in a project is maintainability. Performance / security / whatever problems very rarely arise in my experience, and if they do they can be addressed and fixed.
+Lack of maintainability however is a looming problem in *every project* however.
+By maintainability I mean: How easy is it to make changes without breaking stuff and creating bugs.
+To me it feels like every sofware project has a halflife and it's only a matter of time until it decays into unmaintainable goop, where 1 hour of bugfixing creates 2 more hours worth of bugs and progress is almost impossible. A project in that state is really horrible to work on and really saps your motivation.
+A lot of the tips above are geared towards helping you keep your project more maintainable for as long as possible. Ideally your project can avoid becoming goop for its entire lifetime and be a pleasure to work on every day. Another benefit of a maintainable project is that progress is linear and more predictable, whereas in an unmaintainable one, progress is really fast at the beginning and then slows down geometrically over time. It's worth moving slowly at the beginning of a project to ensure you are setting things up in a maintainable way. 
 
-* Maintainability
-Dont worry about performance.
-Dont worry about security.
-*Do* worry about maintainability.
 
