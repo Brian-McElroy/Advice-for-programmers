@@ -39,6 +39,12 @@ Keep functions tiny (eg. 10 lines).
 Many small things are almost always better then one big thing (classes, scenes, prefabs, whatever.)  
 Keep the lifetime of everything to a minimum (objects, scenes, prefabs, whatever.) It's always better to spawn and destroy stuff than keep it around.  
 
+### But how can small classes do complicated tasks?
+Think of your program like a corporation and the classes as people with different jobs. You will have worker classes at the bottom of the hierarchy, and then layers of manager classes, managing the worker classes and each other. The actual guts of your implementation will be in worker classes, difficult stuff like math or procedural level generation or pathfinding. Each worker class will do one task and not actually make decisions or manage other classes. Manager classes on the other hand will handle decisions and logic like what  happens in your program if user presses X button or Y button, but they will have no actual implementation code in them, only decision making logic. Worker classes will do one difficult thing each, and manager classes will manage one aspect of one feature each. This way worker classes and manager classes can both remain simple and small but accomplish a lot.
+You can also think of your classes like Lego bricks, each one is small and simple but can be combined in any number of ways to make something complicated.
+Also if your classes are loosely coupled they really will be reusable like Lego bricks and you could rearrange them to make a different app.
+You can also just start writing worker classes you know you will need for a project without thinking too much or worrying about design patterns. You can build your program from the bottom-up rather than top-down.
+
 ### Minimise coupling.  
 Everyone always says this but I think they dont define coupling too well. Obviously different parts of your code will need to talk to each other at some point and that's ok.  
 Classes should have well defined public endpoint functions and everything else should be private.  
@@ -86,7 +92,7 @@ That process might look like this.
 Pretty much the only thing I worry about in a project is maintainability. Performance / security / whatever problems very rarely arise in my experience, and if they do they can be troubleshooted and fixed.  
 Lack of maintainability however, is a looming existential problem in *every project*.  
 By maintainability I mean: How easy is it to make changes without breaking stuff and creating bugs.  
-To me, it feels like every sofware project has a half-life and it's only a matter of time until it decays into unmaintainable goop, where 1 hour of bugfixing creates 2 more hours worth of bugs, and progress is almost impossible. A project in that state is really horrible to work on and really saps your motivation.  
+To me, it feels like every sofware project has a half-life and it's only a matter of time until it decays into unmaintainable goop, where 1 hour of bugfixing work creates 2 more hours worth of bugs, and progress is almost impossible. A project in that state is really horrible to work on and really saps your motivation.  
 A lot of the tips above are geared towards helping you keep your project more maintainable for as long as possible. Ideally your project can avoid becoming goop for its entire lifetime and be a pleasure to work on every day.  
 Another benefit of a maintainable project is that progress is linear and more predictable, whereas in an unmaintainable one, progress is really fast at the beginning and then slows down geometrically over time. It's worth moving slowly at the beginning of a project to ensure you are setting things up in a maintainable way. 
 
