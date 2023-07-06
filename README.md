@@ -72,7 +72,7 @@ That process might look like this.
 
 ### *Do* worry about maintainability.
 Pretty much the only thing I worry about in a project is maintainability. Performance / security / whatever problems very rarely arise in my experience, and if they do they can be addressed and fixed.  
-Lack of maintainability however is a looming problem in *every project* however.  
+Lack of maintainability however is a looming problem in *every project*.  
 By maintainability I mean: How easy is it to make changes without breaking stuff and creating bugs.  
 To me it feels like every sofware project has a halflife and it's only a matter of time until it decays into unmaintainable goop, where 1 hour of bugfixing creates 2 more hours worth of bugs and progress is almost impossible. A project in that state is really horrible to work on and really saps your motivation.  
 A lot of the tips above are geared towards helping you keep your project more maintainable for as long as possible. Ideally your project can avoid becoming goop for its entire lifetime and be a pleasure to work on every day.  
