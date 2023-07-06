@@ -40,10 +40,11 @@ Many small things are almost always better then one big thing (classes, scenes, 
 Keep the lifetime of everything to a minimum (objects, scenes, prefabs, whatever.) It's always better to spawn and destroy stuff than keep it around.  
 
 ### But how can small classes do complicated tasks?
-Think of your program like a corporation and the classes as people with different jobs. You will have worker classes at the bottom of the hierarchy, and then layers of manager classes, managing the worker classes and each other. The actual guts of your implementation will be in worker classes, difficult stuff like math or procedural level generation or pathfinding. Each worker class will do one task and not actually make decisions or manage other classes. Manager classes on the other hand will handle decisions and logic like what  happens in your program if user presses X button or Y button, but they will have no actual implementation code in them, only decision making logic. Worker classes will do one difficult thing each, and manager classes will manage one aspect of one feature each. This way worker classes and manager classes can both remain simple and small but accomplish a lot.
-You can also think of your classes like Lego bricks, each one is small and simple but can be combined in any number of ways to make something complicated.
-Also if your classes are loosely coupled they really will be reusable like Lego bricks and you could rearrange them to make a different app.
-You can also just start writing worker classes you know you will need for a project without thinking too much or worrying about design patterns. You can build your program from the bottom-up rather than top-down.
+Think of your program like a corporation and the classes as people with different jobs. You will have worker classes at the bottom of the hierarchy, and then layers of manager classes managing the worker classes and each other. The actual guts of your implementation will be in worker classes, difficult stuff like math or procedural level generation or pathfinding. Each worker class will do one task and not actually make decisions or manage other classes.  
+Manager classes on the other hand will handle decisions and logic like what  happens in your program if user presses X button or Y button, but they will have no actual implementation code in them, only decision making logic. Worker classes will do one difficult thing each, and manager classes will manage one aspect of one feature each. This way worker classes and manager classes can both remain simple and small but accomplish a big complicated task.  
+You can also think of your classes like Lego bricks, each one is small and simple but can be combined to make something complicated.  
+Also if your classes are loosely coupled they really will be reusable like Lego bricks and you could rearrange them to make a different app.  
+You can also just start writing worker classes you know you will need for a project without thinking too much or worrying about design patterns. You can build your program from the bottom-up rather than top-down.  
 
 ### Minimise coupling.  
 Everyone always says this but I think they dont define coupling too well. Obviously different parts of your code will need to talk to each other at some point and that's ok.  
@@ -81,7 +82,7 @@ Obviousuly it's nice to have code organized and neat, but disorganized code is n
 ## Optimise for *you*.
 The first code you write for any feature should be the utter simplest thing you can think of. The absolute easiest thing you personally as the dev could do that might give the client what they want. Ideally short and also *simple* and basic.  
 If this code works and it's fit for purpose then, happy days! you are done. Move on to next task. Only if your program is now failing some predetermined benchmark of performance / quality / security / whatever, should you consider optimizing your code.  
-That process might look like this.
+That process might look like this...
 1. Write simplest code.
 2. Run benchmarks.
 3. If benchmark passes, you're done! If benchmark fails and program is not fit for purpose, goto 4
