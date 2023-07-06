@@ -54,6 +54,7 @@ Avoid fancy features of the langauge if you can.
 If you can do everything with the basics like, variables, functions, loops, if/else (the things you learned in week 1 of college) thats great! Having to use fancier features of a language (eg. ternary operators, linq, whatever) is not a good sign.  
 Other programmers (including future you) mightnt know those fancy features very well. Also if you are resorting to using fancy features it shows your head is in the wrong place, you should be striving to make your code as simple as possible, not fancy.
 
+### Static functions ftw
 The absolute best class is all static with no fields and just simple functions that take some input and return some output. As much of your code as possible should be like that.
 
 ### Elegance
