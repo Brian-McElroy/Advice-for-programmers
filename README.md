@@ -24,12 +24,12 @@ Also more features can muddy the design and the apps purpose for users.
 You should question whoever is suggesting making more software and more code and have them prove their point with data, prove that it's worthwhile.  
 Ideally you would be removing features, deleting software and code. Question the existing features existence and always be asking should we delete this?  
 
-## If you've been convinced to write some code, when sitting down to actually do so...
+## Actual Coding advice.
+
+### If you've been convinced to write some code, when sitting down to actually do so...
 You should ideally be starting a new file, (or a new class)  
 If you must work in an existing file then you should at least be starting a new function.  
 Very rarely should you be adding more code to an existing function. Perhaps just one line calling your new function would be ok, anything else is dubious.  
-
-## Actual Coding advice.
 
 ### The fundamentals.
 If you can religiously follow these fundamentals then u are 50% of the way to having good code already.  
