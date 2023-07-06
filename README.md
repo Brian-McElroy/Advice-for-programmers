@@ -52,9 +52,13 @@ If class A is calling many different functions on class B.
 
 ### Fancy features.
 Avoid fancy features of the langauge if you can.  
-If you can do everything with the basisc like, variables, functions, loops, if/else (the things you learned in week 1 of college) thats great! Having to use fancier features of a language (eg. ternary operators, linq, whatever) is not a good sign.  
+If you can do everything with the basics like, variables, functions, loops, if/else (the things you learned in week 1 of college) thats great! Having to use fancier features of a language (eg. ternary operators, linq, whatever) is not a good sign.  
+Other programmers (including future you) mightnt know those fancy features very well. Also if you are resorting to using fancy features it shows your head is in the wrong place, you should be striving to make your code as simple as possible, not fancy.
 
 The absolute best class is all static with no fields and just simple functions that take some input and return some output. As much of your code as possible should be like that.
+
+### Elegance
+So coders usually say code is "elegant" meaning it is very terse and/or clever and accomplishes a lot in few lines of code. This is not very good imo. I would much rather have 4 lines of very simple basic code that a child could understand, rather than a clever elegant one-liner. Just like with fancy features, future programmers (including you) may not understand that clever code and so it is less maintainable then the simple basic code.
 
 ### Design patterns.
 The best design pattern is none.  
