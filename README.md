@@ -68,9 +68,9 @@ The absolute best class is static with no fields and just static simple function
 Code that is easy to write unit tests for is probably good. It is a red flag if code is difficult to write unit tests for.
 
 ### Naming
-Names of files / classes / functions are important. It's worth spending a little extra time coming up with a good name. Long and descriptive is definitely better than short and ambiguous. Eg. I have a class called ChatGPTresponseNiceFormatter with these functions..  
-public static string MakeNiceForTextToSpeech(string rawGPTresponse)
-public static string MakeNiceForPrinting(string rawGPTresponse)
+Names of files / classes / functions are important. It's worth spending a little extra time coming up with a good name. Long and descriptive is definitely better than short and ambiguous. Eg. I have a class called ChatGPTresponseNiceFormatter with these functions..    
+public static string MakeNiceForTextToSpeech(string rawGPTresponse)  
+public static string MakeNiceForPrinting(string rawGPTresponse)  
 Also, if you are adding code that is not within the scope of the original class or functions name, you should probably start a new class or function and put the code there instead.
 
 ### Elegance
