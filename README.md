@@ -51,7 +51,7 @@ Everyone always says this but I think they dont define coupling too well. Obviou
 Classes should have well defined public endpoint functions and everything else should be private.  
 If you can delete everything inside a class and replace it with something entirely different, without any of your other code breaking, then thats fine and you have avoided bad coupling.  
 
-Some things that are probably signs of bad coupling.  
+Some things that are probably signs of bad coupling... 
 If class A is calling class B and class B is also calling class A.  
 If class A is micromanaging class B, like setting a bool on it.  
 If class A is calling many different functions on class B.  
@@ -59,13 +59,19 @@ If class A is calling many different functions on class B.
 ### Fancy features.
 Avoid fancy features of the langauge if you can.  
 If you can do everything with the basics like, variables, functions, loops, if/else (the things you learned in week 1 of college) thats great! Having to use fancier features of a language (eg. ternary operators, linq, whatever) is not a good sign.  
-Other programmers (including future you) mightnt know those fancy features very well. Also if you are resorting to using fancy features it shows your head is in the wrong place, you should be striving to make your code as simple as possible, not fancy.
+Other programmers (including future you) mightn't know those fancy features very well. Also if you are resorting to using fancy features it shows your head is in the wrong place, you should be striving to make your code as simple as possible, not fancy.
 
 ### Static functions ftw
-The absolute best class is all static with no fields and just simple functions that take some input and return some output. As much of your code as possible should be like that.
+The absolute best class is static with no fields and just static simple functions that take some input and return some output. As much of your code as possible should be like that.
 
 ### Testability
 Code that is easy to write unit tests for is probably good. It is a red flag if code is difficult to write unit tests for.
+
+### Naming
+Names of files / classes / functions are important. It's worth spending a little extra time coming up with a good name. Long and descriptive is definitely better than short and ambiguous. Eg. I have a class called ChatGPTresponseNiceFormatter with these functions..  
+public static string MakeNiceForTextToSpeech(string rawGPTresponse)
+public static string MakeNiceForPrinting(string rawGPTresponse)
+Also, if you are adding code that is not within the scope of the original class or functions name, you should probably start a new class or function and put the code there instead.
 
 ### Elegance
 So coders usually say code is "elegant" meaning it is very terse and/or clever and accomplishes a lot in few lines of code. This is not very good imo. I would much rather have 4 lines of very simple basic code that a child could understand, rather than a clever elegant one-liner. Just like with fancy features, future programmers (including you) may not understand that clever code and so it is less maintainable then the simple basic code.
