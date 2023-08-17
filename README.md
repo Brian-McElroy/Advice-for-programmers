@@ -1,5 +1,5 @@
 # Advice-for-programmers.
-A few principles I've found to be important and useful in my career making games and apps and using Unity.  
+Some things I've found to be important and useful in my career making games and apps and using Unity.  
 
 ## Communication skill is more important than coding skill.
 I would much rather have a terrible coder / great communicator on my team rather than the inverse.  
