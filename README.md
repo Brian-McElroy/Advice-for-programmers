@@ -40,25 +40,30 @@ Many small things are almost always better then one big thing (classes, scenes, 
 Keep the lifetime of everything to a minimum (objects, scenes, prefabs, whatever.) It's always better to spawn and destroy stuff than keep it around.  
 
 ### But how can small classes do complicated tasks?
-Think of your program like a corporation and the classes as people with different jobs. You will have worker classes at the bottom of the hierarchy, and then layers of manager classes managing the worker classes and each other. The actual guts of your implementation will be in worker classes, difficult stuff like math or procedural level generation or pathfinding. Each worker class will do one task and not actually make decisions or manage other classes.  
-Manager classes on the other hand will handle decisions and logic like what  happens in your program if user presses X button or Y button, but they will have no actual implementation code in them, only decision making logic. Worker classes will do one difficult thing each, and manager classes will manage one aspect of one feature each. This way worker classes and manager classes can both remain simple and small but accomplish a big complicated task.  
+Think of your program like a corporation and the classes as people with different jobs. Like in a corporation there are workers and managers.  
+Worker classes do hard work (like complicated math or procedural generation), but they dont make any decisions.  
+Manager classes dont do any hard work at all, but instead just make decisions and give orders to other classes.    
+
+You should end up with a hierarchy of many classes like a tree structure, with workers on the bottom, followed by a layer of manager classes managing those workers, followed by more layers of manager classes managing the managers beneath them.  
+
 You can also think of your classes like Lego bricks, each one is small and simple but can be combined to make something complicated.  
-Also if your classes are loosely coupled they really will be reusable like Lego bricks and you could rearrange them to make a different app.  
-You can also just start writing worker classes you know you will need for a project without thinking too much or worrying about design patterns. You can build your program from the bottom-up rather than top-down.  
+If your classes are loosely coupled they really will be reusable like Lego bricks and you could rearrange them to make a different app.  
+
+At the beginning of a project you can just start writing worker classes you know you will need without thinking too much or worrying about design patterns. You can build your program from the bottom-up rather than top-down.  
 
 ### Minimise coupling.  
-Everyone always says this but I think they dont define coupling too well. Obviously different parts of your code will need to talk to each other at some point and that's ok.  
+Different parts of your code will need to talk to each other at some point and that's ok.  
 Classes should have well defined public endpoint functions and everything else should be private.  
-If you can delete everything inside a class and replace it with something entirely different, without any of your other code breaking, then thats fine and you have avoided bad coupling.  
-
-Some things that are probably signs of bad coupling... 
+If you can delete everything inside a class and replace it with something entirely different, without any of your other code breaking, then thats fine and you have avoided coupling.   
+ 
+Some things that are probably signs of coupling...  
 If class A is calling class B and class B is also calling class A.  
 If class A is micromanaging class B, like setting a bool on it.  
 If class A is calling many different functions on class B.  
 
 ### Fancy features.
 Avoid fancy features of the langauge if you can.  
-If you can do everything with the basics like, variables, functions, loops, if/else (the things you learned in week 1 of college) thats great! Having to use fancier features of a language (eg. ternary operators, linq, whatever) is not a good sign.  
+If you can do everything with the basics (the things you learned in week 1 of college) thats great! Having to use fancier features of a language (eg. ternary operators, linq, whatever) is not a good sign.  
 Other programmers (including future you) mightn't know those fancy features very well. Also if you are resorting to using fancy features it shows your head is in the wrong place, you should be striving to make your code as simple as possible, not fancy.
 
 ### Static functions ftw
