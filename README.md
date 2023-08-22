@@ -88,7 +88,7 @@ a design pattern can help you implement a very difficult feature, overcome a big
 
 ### Why spaghetti is bad.
 The reason we call a certain type of bad code "spaghetti code" is not because it is disorganised and has no pattern like spaghetti, it's because it's all tangled and stuck together like spaghetti. You cant pull on a single strand of spaghetti without a huge clump of it following.  
-Obviousuly it's nice to have code organized and neat, but disorganized code is not the end of the world, what *should* certainly be avoided is "spaghetti code" which is code that is highly highly coupled with many instances of bad coupling, where you cant change one class without having to change another, and so on.  
+It's nice to have code organized and neat, but disorganized code is not the end of the world, what *should* certainly be avoided is "spaghetti code" which is code that is highly coupled, where you cant change one class without having to change another, and so on.  
 
 ## Optimise for *you*.
 The first code you write for any feature should be the utter simplest thing you can think of. The absolute easiest thing you personally as the dev could do that might give the client what they want. Ideally short and also *simple* and basic.  
