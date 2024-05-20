@@ -64,7 +64,7 @@ Other programmers (including future you) mightn't know those fancy features very
 The absolute best class is static with no fields and just static simple functions that take some input and return some output. As much of your code as possible should be like that.
 
 ### Testability
-Code that is easy to write unit tests for is probably good. It is a red flag if code is difficult to write unit tests for.
+Code that is easy to write unit tests for is probably good.
 
 ### Naming
 Names of files / classes / functions are important. It's worth spending a little extra time coming up with a good name. Long and descriptive is definitely better than short and ambiguous. Eg. I have a class called ChatGPTresponseNiceFormatter with these functions..    
