@@ -53,12 +53,7 @@ At the beginning of a project you can just start writing worker classes you know
 ### Minimise coupling.  
 Different parts of your code will need to talk to each other at some point and that's ok.  
 Classes should have well defined public endpoint functions and everything else should be private.  
-If you can delete everything inside a class and replace it with something entirely different, without any of your other code breaking, then thats fine and you have avoided coupling.   
- 
-Some things that are probably signs of coupling...  
-If class A is calling class B and class B is also calling class A.  
-If class A is micromanaging class B, like setting a bool on it.  
-If class A is calling many different functions on class B.  
+If you can delete all the code inside a class, your program probably wont work properly anymore, but if changes are nopt required in other classes, and your program still compiles and runs, then thats good, you have avoided bad coupling.
 
 ### Fancy features.
 Avoid fancy features of the langauge if you can.  
