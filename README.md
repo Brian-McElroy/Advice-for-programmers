@@ -6,9 +6,8 @@ I would much rather have a terrible coder / great communicator on my team rather
 Sitting down to write some code without talking to someone first is a bad sign and should be avoided.  
 Overcommunication is always better than undercommunication. Overcommunication could be annoying or seen as patronising but the alternative is far worse. eg. a top dev spending a week writing excellent code for the *wrong feature*!  
 Ask questions. Keep asking questions until it is 100% clear in your own mind...  
-Exactly what you are doing.  
-Why you are doing it.  
-How you plan to do it.  
+* Exactly what you are doing.  
+* Why you are doing it.  
 
 ## Take your time.
 It's much better to underpromise and overdeliver than the inverse.  
