@@ -19,7 +19,7 @@ Being hasty and writing unmaintainable code will lose you time overall, and more
 As an engineer you might think your job is to write code. But a very important task you have is to always fight against writing more software and more code.  
 Every feature you add and every change you make almost certainly introduces bugs and regressions.  
 The more features a program has the slower and more difficult it is to work on (to fix bugs and make necessary changes later)  
-Also more features can muddy the design and the apps purpose for users.  
+Also more features can muddy the design and the app's purpose for users.  
 You should question whoever is suggesting making more software and more code and have them prove their point with data, prove that it's worthwhile.  
 Ideally you would be removing features, deleting software and code. Question the existing features and always be asking should we delete this?  
 
@@ -53,7 +53,7 @@ At the beginning of a project you can just start writing worker classes you know
 ### Minimise coupling.  
 Different parts of your code will need to talk to each other at some point and that's ok.  
 Classes should have well defined public endpoint functions and everything else should be private.  
-If you can delete all the code inside a class, your program probably wont work properly anymore, but if changes are nopt required in other classes, and your program still compiles and runs, then thats good, you have avoided bad coupling.
+If you can delete all the code inside a class, your program probably wont work properly anymore, but if changes are not required in other classes, and your program still compiles and runs, then thats good, you have avoided bad coupling.
 
 ### Fancy features.
 Avoid fancy features of the langauge if you can.  
