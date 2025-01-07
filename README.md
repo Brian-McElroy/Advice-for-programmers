@@ -61,7 +61,7 @@ If you can do everything with the basics (the things you learned in week 1 of co
 Other programmers (including future you) mightn't know those fancy features very well. Also if you are resorting to using fancy features it shows your head is in the wrong place, you should be striving to make your code as simple as possible, not fancy.
 
 ### Inheritance sucks.
-If you went to college and learned OOP you may have learned a lot about inheritance. Avoid using it in your code though, it's bad. A much better option that can give the same benefits is composition.
+If you went to college and learned OOP you may have learned a lot about inheritance. Avoid using it in your code though, it's bad. Without going into detail, it is a great way to paint yourself into a corner. A much better option that can give the same benefits is composition.
 https://en.wikipedia.org/wiki/Composition_over_inheritance
 
 ### Static functions ftw
