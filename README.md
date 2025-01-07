@@ -60,6 +60,10 @@ Avoid fancy features of the langauge if you can.
 If you can do everything with the basics (the things you learned in week 1 of college) thats great! Having to use fancier features of a language (eg. ternary operators, linq, whatever) is not a good sign.  
 Other programmers (including future you) mightn't know those fancy features very well. Also if you are resorting to using fancy features it shows your head is in the wrong place, you should be striving to make your code as simple as possible, not fancy.
 
+### Inheritance sucks.
+If you went to college and learned OOP you may have learned a lot about inheritance. Avoid using it in your code though, it's bad. A much better option that can give the same benefits is composition.
+https://en.wikipedia.org/wiki/Composition_over_inheritance
+
 ### Static functions ftw
 The absolute best class is static with no fields and just static simple functions that take some input and return some output. As much of your code as possible should be like that.
 
